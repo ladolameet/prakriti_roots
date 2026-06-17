@@ -35,13 +35,13 @@ export const metadata: Metadata = {
   },
   robots: 'index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1',
   icons: {
-    icon: '/favicon.ico', // Forces a clean standard icon path everywhere, bypassing browser theme overrides
+    icon: '/icon.jpg', // Tells the website to look for your logo named icon.jpg inside the public folder
   },
 }
 
 export const viewport: Viewport = {
   colorScheme: 'light',
-  themeColor: '#FFFFFF', // Clean white background color status bar rule
+  themeColor: '#FFFFFF', // Ensures mobile status bars load with a clean light layout background
   width: 'device-width',
   initialScale: 1,
 }
@@ -59,4 +59,4 @@ export default function RootLayout({
       </body>
     </html>
   )
-}
+  }
